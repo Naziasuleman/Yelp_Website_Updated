@@ -221,7 +221,7 @@ button {
 .dropbtn2 {
   float: left;
   position: absolute;
-  margin-left: 250px;
+  margin-left: 220px;
   width: 200px;
   background-color: transparent;
   color: white;
@@ -240,7 +240,7 @@ button {
 .dropbtn3 {
   float: left;
   position: absolute;
-  margin-left: 460px;
+  margin-left: 440px;
   width: 130px;
   background-color: transparent;
   color: rgb(255, 255, 255);
@@ -252,7 +252,7 @@ button {
 
 .dropbtn4 {
   float: right;
-  margin-right: 80px;
+  margin-right: 90px;
   width: 130px;
   background-color: #dc0a0a;
   color: rgb(255, 255, 255);
