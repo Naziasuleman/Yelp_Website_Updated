@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yelp.com</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero-section clearfix">
+      <nav>
+        <img class="logo" src="images/logo.svg" />
+        <form>
+          <input
+            class="search1"
+            type="text"
+            placeholder="tacos, cheap dinner, Max's"
+          />
+          <input class="search2" type="text" placeholder="San Francisco, CA" />
+          <button type="submit">
+            <svg class="icon" width="24" height="24" class="icon_svg">
+              <path
+                d="M21.853 20.355l-3.444-3.443a9.428 9.428 0 10-16.761-6.171 9.428 9.428 0 0015.348 7.586l3.443 3.442a1 1 0 101.414-1.414zM5.82 16.245a7.429 7.429 0 115.253 2.175 7.38 7.38 0 01-5.253-2.176z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Yelp for Business
+            <svg
+              class="svg-icon"
+              style="
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+              />
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Add a Business</a>s
+            <a href="#">Claim your business</a>
+            <a href="#">Log in to your Account</a>
+            <a href="#">Explore yelp for Business</a>
+          </div>
+        </div>
+        <button class="dropbtn2">Write a Review</button>
+        <a href="login.html"><button class="dropbtn3">Log In</button></a>
+        <a href="signup.html"><button class="dropbtn4">Sign Up</button></a>
+      </nav>
+      <div class="restaurants">
+        <button class="btn1">
+          Restaurants
+          <svg
+            class="svg-icon"
+            style="
+              width: 1em;
+              height: 1em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+            />
+          </svg>
+        </button>
+        <button class="btn1">
+          Home Services
+          <svg
+            class="svg-icon"
+            style="
+              width: 1em;
+              height: 1em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+            />
+          </svg>
+        </button>
+        <button class="btn1">
+          Auto Services
+          <svg
+            class="svg-icon"
+            style="
+              width: 1em;
+              height: 1em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+            />
+          </svg>
+        </button>
+        <button class="btn11">
+          More
+          <svg
+            class="svg-icon"
+            style="
+              width: 1em;
+              height: 1em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="hero-text"></div>
+      <button class="hero-btn">
+        <svg class="icon" width="24" height="24" class="icon_svg">
+          <path
+            d="M21.853 20.355l-3.444-3.443a9.428 9.428 0 10-16.761-6.171 9.428 9.428 0 0015.348 7.586l3.443 3.442a1 1 0 101.414-1.414zM5.82 16.245a7.429 7.429 0 115.253 2.175 7.38 7.38 0 01-5.253-2.176z"
+          ></path>
+        </svg>
+      </button>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="recent">
+      <h1>Recent Activity</h1>
+      <card class="card1">
+        <img class="profile" src="images/profile-image.jpg" />
+        <h3>Tara M.</h3>
+        <p>Added 4 photos</p>
+        <a class="link" href="#">The Lumpia Company</a>
+
+        <div class="images">
+          <div class="sec1">
+            <img src="images/food1.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+          <div class="sec2">
+            <img src="images/food2.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+        </div>
+        <h4 class="link bottom">Show all 4 photos</h4>
+      </card>
+
+      <card class="card2">
+        <img class="profile" src="images/profile2.jpg" />
+        <h3>Laurie E.</h3>
+        <p>Added 1 photos</p>
+        <a class="link" href="#">Noe Valley Bakery - West Portal</a>
+
+        <div class="imagess">
+          <img src="images/food3.jpg" height="270px" width="500px" />
+          <img class="icon_svg" src="images/like-icon.svg" />
+        </div>
+      </card>
+
+      <card class="card3">
+        <img class="profile" src="images/profile-image.jpg" />
+        <h3>Rebecca W.</h3>
+        <p>Added 2 photos</p>
+        <a class="link" href="#">Three Polar bears</a>
+
+        <div class="images">
+          <div class="sec1">
+            <img src="images/book1.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+          <div class="sec2">
+            <img src="images/book2.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+        </div>
+      </card>
+
+      <card class="card4">
+        <img class="profile" src="images/profile3.jpg" />
+        <h3>Streve D.</h3>
+        <p>Added 2 photos</p>
+        <a class="link" href="#">Get the skoop premium icecream</a>
+
+        <div class="images">
+          <div class="sec1">
+            <img src="images/icecream1.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+          <div class="sec2">
+            <img src="images/icecream2.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+        </div>
+      </card>
+
+      <card class="card5">
+        <img class="profile" src="images/profile3.jpg" />
+        <h3>Streve D.</h3>
+        <p>Added 2 photos</p>
+        <a class="link" href="#">Yelp Community Event</a>
+
+        <div class="images">
+          <div class="sec1">
+            <img src="images/juice2.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+          <div class="sec2">
+            <img src="images/juice2.jpg" height="250px" width="220px" />
+            <img class="icon_svg" src="images/like-icon.svg" />
+          </div>
+          <h4 class="link bottom1">Show all 3 photos</h4>
+        </div>
+      </card>
+      <card class="card6">
+        <img class="profile" src="images/profile2.jpg" />
+        <h3>Laurie E.</h3>
+        <p>Added 1 photos</p>
+        <a class="link" href="#">Noe Valley Bakery - West Portal</a>
+
+        <div class="imagess">
+          <img src="images/juice3.jpg" height="170px" width="500px" />
+          <img class="icon_svg" src="images/like-icon.svg" />
+        </div>
+      </card>
+
+      <h4 class="link bottom2">
+        <svg
+          class="svg-icon"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+          />
+        </svg>
+        Show more activity
+      </h4>
+    </div>
+
+    <div class="components">
+      <h1>Categories</h1>
+      <div>
+        <div class="box1">
+          <img class="img1" src="images/restaurants.svg" alt="" />
+          <h3 class="title">Restaurants</h3>
+        </div>
+        <div class="box2">
+          <img class="img1" src="images/shopping.svg" alt="" />
+          <h3 class="title">Shopping</h3>
+        </div>
+        <div class="box3">
+          <img class="img1" src="images/nightlife.svg" alt="" />
+          <h3 class="title">NightLife</h3>
+        </div>
+        <div class="box4">
+          <img class="img1" src="images/active life.svg" alt="" />
+          <h3 class="title">Active Life</h3>
+        </div>
+        <div class="box5">
+          <img class="img1" src="images/beauty & spas.svg" alt="" />
+          <h3 class="title" style="width: 300px">beauty & Spas</h3>
+        </div>
+        <div class="box6">
+          <img class="img1" src="images/automative.svg" alt="" />
+          <h3 class="title">Automative</h3>
+        </div>
+        <div class="box7">
+          <img class="img1" src="images/Home Services.svg" alt="" />
+          <h3 class="title" style="width: 300px">Home Services</h3>
+        </div>
+        <div class="box8">
+          <img class="img1" src="images/More.svg" alt="" />
+          <h3 class="title" style="left: 40px">More</h3>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div style="float: left">
+        <ul>
+          <li class="one">About</li>
+          <li>About Yelp</li>
+          <li>Careers</li>
+          <li>Press</li>
+          <li>Investors Realtion</li>
+          <li>Trust & Safety</li>
+          <li>Content Guideliness</li>
+          <li>Acessibility Statement</li>
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+          <li>Ad Choices</li>
+          <li>Your Privacy Choices</li>
+        </ul>
+      </div>
+      <div style="float: left">
+        <ul>
+          <li class="one">Discover</li>
+          <li>Yelp Projects Cost Guides</li>
+          <li>Collections</li>
+          <li>Talks</li>
+          <li>Events</li>
+          <li>Yelp Blog</li>
+          <li>Support</li>
+          <li>Yelp Mobile</li>
+          <li>Developers</li>
+          <li>RSS</li>
+        </ul>
+      </div>
+      <div style="float: left">
+        <ul>
+          <li class="one">Yelp for Business</li>
+          <li>Yelp for Business</li>
+          <li>Business Owners login</li>
+          <li>Claim your Buisness Page</li>
+          <li>Advistise on Yelp</li>
+          <li>Yelp for Restaurants Owners</li>
+          <li>Table Managmenet</li>
+          <li>Business Success Stories</li>
+          <li>Business Support</li>
+          <li>Yelp Blog for Business</li>
+        </ul>
+      </div>
+      <div style="float: left">
+        <ul>
+          <li class="one">Languages</li>
+          <li>
+            English
+            <svg
+              class="svg-icon"
+              style="
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+              />
+            </svg>
+          </li>
+          <li style="margin-top: 10px">Countries</li>
+          <li class="one">
+            United States
+            <svg
+              class="svg-icon"
+              style="
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: currentColor;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M896 352a32 32 0 0 0-32-32c-8.288 0-15.776 3.232-21.456 8.4l-0.08-0.08L512 628.752 181.52 328.32l-0.08 0.08A31.744 31.744 0 0 0 160 320a32 32 0 0 0-32 32c0 9.392 4.112 17.744 10.544 23.6l-0.064 0.08 352 320 0.064-0.08c5.68 5.168 13.168 8.4 21.456 8.4s15.776-3.232 21.456-8.416l0.08 0.08 352-320-0.08-0.08c6.432-5.84 10.544-14.208 10.544-23.584z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <p>
+        Copyright &copy; 2004–2023 Yelp Inc. Yelp,
+        <img class="img11" src="images/footer-logo.svg" />,
+        <img src="images/burst.svg" style="height: 20px" /> and related marks
+        are registered trademarks of Yelp.
+      </p>
+    </footer>
+  </body>
+</html>
