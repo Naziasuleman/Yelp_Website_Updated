@@ -47,19 +47,29 @@
         <h3 style="color: black; position: absolute; top: 550px; left: 400px">
           OR
         </h3>
-        <form>
+        <form >
           <input
-            style="position: absolute; top: 2px; left: 250px"
+            id="email"
+            style="position: absolute; top: 10px; left: 250px"
             type="text"
             placeholder="Email"
+            onkeyup= "validateEmail()"
           />
+         
           <input
-            style="position: absolute; top: 50px; left: 250px"
+            id="password"
+            style="position: absolute; top: 60px; left: 250px"
             type="password"
-            placeholder="password"
+            placeholder="Password"
           />
+           <div class="error" style="display: none">
+          <div class="error1">  
+            <img src="images/error.PNG" height="45px" width="45px"/>
+            <p style="margin-left: 5px">Please include an '@' in the email address. Missing @ in email</p>
+          </div>
+          </div>
           <p
-            style="color: #1285d1; position: absolute; top: 230px; left: 490px"
+            style="color: #1285d1; position: absolute; top: 240px; left: 490px"
           >
             Forget password?
           </p>
@@ -68,14 +78,15 @@
               padding-left: 130px;
               color: white;
               background-color: #dc0a0a;
-              top: 280px;
+              top: 310px;
             "
             class="facebook-button2"
+            onclick="validateForm()"
           >
             Log in
           </button>
           <p
-            style="color: #afb1b4; position: absolute; top: 350px; left: 450px"
+            style="color: #afb1b4; position: absolute; top: 375px; left: 450px"
           >
             New to Yelp? <span style="color: #1285d1">Sign Up</span>
           </p>
@@ -185,5 +196,8 @@
         are registered trademarks of Yelp.
       </p>
     </footer>
+     <div id="popupContainer" class="popup-container">
+      <p id="popupMessage" style="color: red;"></p>
+    <script src="script.js"></script>
   </body>
 </html>

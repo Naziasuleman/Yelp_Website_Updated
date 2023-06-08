@@ -58,23 +58,71 @@
           <input
             style="position: absolute; top: 50px; left: 310px"
             type="text"
+            id="email"
             placeholder="Email"
+            onkeyup="validateForm(); validateEmail();"
           />
           <input
             style="position: absolute; top: 100px; left: 310px"
             type="password"
+            id="passwordInput"
             placeholder="password"
+            onkeyup="validateForm(); checkPasswordStrength()"
           />
+          <div
+            id="strength"
+            style="position: absolute; top: 290px; left: 310px"
+          >
+            <img id="strengthImg" src="" />
+            <p id="strengthText"></p>
+          </div>
           <input
-            style="position: absolute; top: 150px; left: 310px"
+            id="confirmPasswordInput"
+            style="position: absolute; top: 210px; left: 310px"
+            type="password"
+            placeholder="Confirm Password"
+            onkeyup="validateForm(); "
+          />
+          <div class="error" style="display: none">
+            <div class="error1">
+              <img src="images/error.PNG" height="45px" width="45px" />
+              <p style="margin-left: 5px">
+                Please include an '@' in the email address. Missing @ in email
+              </p>
+            </div>
+          </div>
+
+          <input
+            style="position: absolute; top: 260px; left: 310px"
             type="number"
             placeholder="ZIP code"
+            onkeyup="validateForm()"
           />
-          <h3 style="color: black; position: absolute; top: 330px; left: 310px">
+          <p
+            id="passwordMatchHint"
+            style="
+              position: absolute;
+              top: 250px;
+              left: 700px;
+              color: red;
+              display: none;
+            "
+          >
+            Passwords do not match
+          </p>
+          <div
+            id="strength"
+            style="position: absolute; top: 290px; left: 310px"
+          >
+            <img src="" />
+            <p></p>
+          </div>
+
+          <h3 style="color: black; position: absolute; top: 440px; left: 310px">
             Birthday <span style="color: rgb(204, 198, 198)">Optional</span>
           </h3>
           <select
-            style="position: absolute; top: 390px; left: 310px"
+            style="position: absolute; top: 490px; left: 310px"
             id="month"
             name="Month"
           >
@@ -85,7 +133,7 @@
           </select>
 
           <select
-            style="position: absolute; top: 390px; left: 440px"
+            style="position: absolute; top: 490px; left: 440px"
             id="month"
             name="Day"
           >
@@ -99,7 +147,7 @@
           </select>
 
           <select
-            style="position: absolute; top: 390px; left: 570px"
+            style="position: absolute; top: 490px; left: 570px"
             id="month"
             name="Year"
           >
@@ -117,14 +165,16 @@
               padding-left: 130px;
               color: white;
               background-color: #dc0a0a;
-              top: 450px;
+              top: 560px;
             "
             class="facebook-button2"
+            id="signupButton"
+            disabled
           >
             Sign up
           </button>
           <p
-            style="color: #afb1b4; position: absolute; top: 520px; left: 520px"
+            style="color: #afb1b4; position: absolute; top: 630px; left: 520px"
           >
             Already on Yelp? <span style="color: #1285d1">Log in</span>
           </p>
@@ -236,5 +286,6 @@
         are registered trademarks of Yelp.
       </p>
     </footer>
+    <script src="sign-up.js"></script>
   </body>
 </html>
