@@ -31,6 +31,7 @@ nav img {
   color: #dc0a0a;
   text-align: center;
   align-items: center;
+  height: 1000px;
 }
 
 .facebook-button,
@@ -116,7 +117,6 @@ footer {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 400px;
 }
 
 .col {

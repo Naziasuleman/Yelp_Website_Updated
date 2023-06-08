@@ -11,7 +11,25 @@ function validateEmail() {
     errorDiv.style.display = "none";
   }
 }
+// passwords doesnot match
+const passwordInput = document.getElementById("passwordInput");
+const confirmPasswordInput = document.getElementById("confirmPasswordInput");
+const passwordMatchHint = document.getElementById("passwordMatchHint");
 
+function validatePassword() {
+  if (passwordInput.value !== confirmPasswordInput.value) {
+    passwordInput.style.borderColor = "red";
+    confirmPasswordInput.style.borderColor = "red";
+    passwordMatchHint.style.display = "block";
+  } else {
+    passwordInput.style.borderColor = "";
+    confirmPasswordInput.style.borderColor = "";
+    passwordMatchHint.style.display = "none";
+  }
+}
+
+passwordInput.addEventListener("input", validatePassword);
+confirmPasswordInput.addEventListener("input", validatePassword);
 // rules implementation in password
 function checkPasswordStrength() {
   var password = document.getElementById("passwordInput").value;
